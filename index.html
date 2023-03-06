@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------LINKS OWL CAROUSEL----------------- -->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    
+    <!-- ----------BOOTSTRAP 5.0.2----------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <title>Revista DC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/estilos.css?v=1.47">
+    <link rel="stylesheet" href="css/responsive.css?v=1.18"> 
+</head>
+<body>
+
+    <!-- ----------------------------------OFFCANVAS------------------------------------- -->
+      <div class="offcanvas offcanvas-start canvas_menu" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header head_canva">
+          <img src="img/logo_white.png" alt="">
+          <div class="iconos_header">
+            <div class="redes_head">
+                <a href="#" class="red"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="red"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="red"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="red"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="red"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="red"><i class="fa-solid fa-video"></i></a>
+            </div>
+            <div class="carrito">
+                <button type="button" class="btn boton_carrito position-relative">
+                    <i class="fa-solid fa-cart-shopping"></i>   
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      0+
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </button>
+            </div>
+        </div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed btn_buscador" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        BUSCADOR
+                        </button>
+                    </h2> 
+                    <div id="flush-collapseOne" class="accordion-collapse collapse " aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="contenedor_select">
+                                <select class="form-select select_campo" aria-label="Default select example">
+                                    <option selected>Categoría</option>
+                                    <option value="1" class="opcion">Cat #1</option>
+                                    <option value="2" class="opcion">Cat #2</option>
+                                    <option value="3" class="opcion">Cat #3</option>
+                                    <option value="4" class="opcion">Cat #4</option>
+                                    <option value="3" class="opcion">Cat #3</option>
+                                    <option value="4" class="opcion">Cat #4</option>
+                                </select>
+                            </div>
+                            <div class="contenedor_select">
+                                <select class="form-select select_campo" aria-label="Default select example">
+                                    <option selected>Ciudad</option>
+                                    <option value="1" class="opcion">Medellín</option>
+                                    <option value="2" class="opcion">Bogotá</option>
+                                    <option value="3" class="opcion">Barranquilla</option>
+                                </select>
+                            </div>
+                            <div class="contenedor_select">
+                                <select class="form-select select_campo" aria-label="Default select example">
+                                    <option selected>Fecha</option>
+                                    <option value="1" class="opcion">Fecha #1</option>
+                                    <option value="2" class="opcion">Fecha #2</option>
+                                    <option value="3" class="opcion">Fecha #3</option>
+                                    <option value="4" class="opcion">Fecha #4</option>
+                                </select>
+                            </div>
+                            <div class="contenedor_select d-grid">
+                                <button type="button" class="btn btn_buscar">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <div class="menu_categorias">
+            <div class="nav_">
+                <a href="#" class="seccion_gen">QUIÉNES SOMOS</a>
+            </div>
+            <div class="nav_">
+                <a href="#" class="seccion_gen">MÚSICA</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Conciertos</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Lanzamientos</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Entrevistas</a>
+            </div>
+            <div class="nav_">
+                <a href="#" class="seccion_gen">ARTE Y LETRAS</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Exposiciones</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Teatro</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Cine</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>DCiudad</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Literatura</a>
+            </div>
+            <div class="nav_">
+                <a href="#" class="seccion_gen">GASTROBAR</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Noticias</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Recomendados</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Recorridos</a>
+            </div>
+            <div class="nav_">
+                <a href="#" class="seccion_gen">CULTURA CANNÁBICA</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Industria</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Agenda</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Noticias</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Recomendados</a>
+            </div>
+            <div class="nav_">
+                <a href="#" class="seccion_gen">TURISMO</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Destinos</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Ecoturismo</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Hoteles</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Noticias</a>
+            </div>
+            <div class="nav_">
+                <a href="#" class="seccion_gen">TENDENCIAS</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Tecnología</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Moda</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Bienestar</a>
+                <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Cultura Bici</a>
+            </div>
+            <div class="nav_">
+                <a href="#" class="seccion_gen">PAUTE CON NOSOTROS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<!-- ---------------------------HEADER------------------------------ -->
+    <header class="header">
+        <div class="content_header">
+            <div class="menu_mobile">
+                <div class="menu_">
+                    <button type="submit" class="btn_nav" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+            <div class="logo_header">
+                <img src="img/logo_dc.png" alt="">
+            </div>
+            <div class="iconos_header">
+                <div class="right_suscribe">
+                    <a href="#" class="btn boton_suscribe">SUSCRÍBETE</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="sub_menu">
+        <div class="content_sub">
+            <div class="menu_logo_mob">
+                <button type="submit" class="btn_nav btn_nav_red" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa-solid fa-bars"></i></button>
+                <img src="img/logo_sub_red.png" alt=""> 
+            </div>
+            <div class="scrollmenu">
+                <div class="sub_menu_cat">
+                    <a href="#" class="item_cat">Conciertos</a>
+                </div>
+                <div class="sub_menu_cat">
+                    <a href="#" class="item_cat">Cultura</a>
+                </div>
+                <div class="sub_menu_cat">
+                    <a href="#" class="item_cat">Gastronomía</a>
+                </div>
+                <div class="sub_menu_cat">
+                    <a href="#" class="item_cat">Planes</a>
+                </div>
+                <div class="sub_menu_cat">
+                    <a href="#" class="item_cat">Festivales</a>
+                </div>
+                <div class="sub_menu_cat">
+                    <a href="#" class="item_cat">Exposiciones</a>
+                </div>
+                <div class="sub_menu_cat">
+                    <a href="#" class="item_cat">Arte</a>
+                </div>
+                <div class="sub_menu_cat">
+                    <a href="#" class="item_cat">Rumba</a>
+                </div>
+                <div class="sub_menu_cat">
+                    <a href="#" class="item_cat">Videos</a> 
+                </div>
+                <div class="sub_menu_cat">
+                    <a href="#" class="sub_bus" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+            <div class="contenedor_item_sub">
+                <a href="#" class="item_submenu">Conciertos</a>
+                <a href="#" class="item_submenu">Cultura</a>
+                <a href="#" class="item_submenu">Gastronomía</a>
+                <a href="#" class="item_submenu">Planes</a>
+                <a href="#" class="item_submenu">Festivales</a>
+                <a href="#" class="item_submenu">Exposiciones</a>
+                <a href="#" class="item_submenu">Arte</a>
+                <a href="#" class="item_submenu">Rumba</a>
+                <a href="#" class="item_submenu">Videos</a>
+                <a href="#" class="sub_bus" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="row">
+                <div class="col"> 
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body caja_collapse">
+                        <div class="content_collapse">
+                            <input type="text" placeholder="Buscar...">
+                            <button type="submit" class="btn btn_submit">Buscar</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------------------MOD SLIDER COVER-------------------- -->
+    <section class="cover">
+        <div class="content_cover">
+            <div class="destacada">
+                <img src="img/Latin-Assistance.jpeg" alt="" class="img_dest">
+                <div class="pos_dest">
+                    <p class="public_dest">21 NOVIEMBRE, 2022</p>
+                    <h2 class="titulo_dest">Los mejores destinos y sugerencias para viajar sin preocupaciones</h2>
+                    <a href="#" class="btn_ver">VER MÁS</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="carousel owl-carousel">
+                <div class="card_slid">
+                    <img src="img/arte.jpg" alt="" class="img_slider">
+                    <div class="pos_card">
+                        <p class="edit">ARTE</p>
+                        <a href="#" class="titulo_slider">Arma tu mejor plan cultural con Revista Dc</a>                        
+                    </div>
+                </div>
+                <div class="card_slid">
+                    <img src="img/gastro.jpg" alt="" class="img_slider">
+                    <div class="pos_card">
+                        <p class="edit">GASTROBAR</p>
+                        <a href="#" class="titulo_slider">Alístate para comer todos los tacos que puedas a un excelente precio</a>                        
+                    </div>
+                </div>
+                <div class="card_slid">
+                    <img src="img/teatro.jpg" alt="" class="img_slider">
+                    <div class="pos_card">
+                        <p class="edit">TEATRO</p>
+                        <a href="#" class="titulo_slider">El Teatro Jorge Eliecer Gaitán presenta: Rojo</a>                        
+                    </div>
+                </div>
+                <div class="card_slid">
+                    <img src="img/scale.jpg" alt="" class="img_slider">
+                    <div class="pos_card">
+                        <p class="edit">TURISMO</p>
+                        <a href="#" class="titulo_slider">MinComercio y Fontur premiaron las mejores fotos del concurso Revela Colombia</a>                        
+                    </div>
+                </div>
+                <div class="card_slid">
+                    <img src="img/cantar.jpg" alt="" class="img_slider">
+                    <div class="pos_card">
+                        <p class="edit">ARTE</p>
+                        <a href="#" class="titulo_slider">Sumérgete en el mundo de las artes escénicas</a>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------------------BUSCADOR EVENTOS --------------------------- -->
+    <section class="buscador">
+        <div class="contenido-buscador">
+            <div class="head_bus">
+                <h2 class="titulo_bus">BUSCADOR</h2>
+            </div>
+            <div class="selectores_cat">
+                <div class="seleccion">
+                    <select class="form-select" aria-label="Default select example">
+                    <option selected>Categoría</option>
+                    <option value="1" class="opcion">Gat #1</option>
+                    <option value="2" class="opcion">Cat #2</option>
+                    <option value="3" class="opcion">Cat #3</option>
+                    <option value="4" class="opcion">Cat #4</option>
+                    </select>
+                </div>
+                <div class="seleccion">
+                    <select class="form-select" aria-label="Default select example">
+                    <option selected>Ciudad</option>
+                    <option value="1" class="opcion">Medellín</option>
+                    <option value="2" class="opcion">Bogotá</option>
+                    <option value="3" class="opcion">Barranquilla</option>
+                    </select>
+                </div>
+                <div class="seleccion">
+                    <select class="form-select" aria-label="Default select example">
+                    <option selected>Fecha</option>
+                    <option value="1" class="opcion">Fecha #1</option>
+                    <option value="2" class="opcion">Fecha #2</option>
+                    <option value="3" class="opcion">Fecha #3</option>
+                    <option value="4" class="opcion">Fecha #4</option>
+                    </select>
+                </div>
+                <div class="seleccion d-grid ">
+                    <button type="button" class="btn">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------MOD Carousel------------------- -->
+    <div class="carrete_cajas">
+        <div class="head_global">
+            <div class="content_global">
+                <h2 class="titulo_global">Próximos Eventos</h2> 
+            </div>
+        </div>
+        <div class="content_carrete">
+            <div class="wrapper_2">
+                <div class="carousel owl-carousel">
+                    <div class="caja_info">
+                        <div class="img_ev">
+                            <img src="img/slider_3.jpg" alt="">
+                            <div class="absolute_ev">
+                                <p class="etiqueta_ev"><i class="fa-solid fa-calendar-days"></i>20 DICIEMBRE, 2022</p>
+                            </div>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_ev">Lorem ipsum dolor sit amet.</a>
+                            <p class="descripcion_ev">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem deserunt fuga itaque vitae quis odio!</p>
+                        </div>
+                    </div>
+                    <div class="caja_info">
+                        <div class="img_ev">
+                            <img src="img/cantar.jpg" alt="">
+                            <div class="absolute_ev">
+                                <p class="etiqueta_ev"><i class="fa-solid fa-calendar-days"></i>20 DICIEMBRE, 2022</p>
+                            </div>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_ev">Lorem ipsum dolor sit amet.</a>
+                            <p class="descripcion_ev">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem deserunt fuga itaque vitae quis odio!</p>
+                        </div>
+                    </div>
+                    <div class="caja_info">
+                        <div class="img_ev">
+                            <img src="img/tur.jpg" alt="">
+                            <div class="absolute_ev">
+                                <p class="etiqueta_ev"><i class="fa-solid fa-calendar-days"></i>20 DICIEMBRE, 2022</p>
+                            </div>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_ev">Lorem ipsum dolor sit amet.</a>
+                            <p class="descripcion_ev">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem deserunt fuga itaque vitae quis odio!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------MOD GRID FLEX----------------------------- -->
+    <div class="grid_flex">
+        <div class="content_grid_">
+            <div class="head_grid">
+                <h2 class="titulo_flex">REELS DC</h2>
+            </div>
+            <div class="carousel_grid_ owl-carousel">
+                <div class="grid_">
+                    <img src="img/tur.jpg" alt="">
+                    <div class="pos_grid_">
+                        <h2 class="titulo_grid_">Un tur por los carnvales de Santa Marta - Admin DC </h2>
+                    </div>
+                </div>
+                <div class="grid_">
+                    <img src="img/Kevin-Johansen.jpg" alt="">
+                    <div class="pos_grid_">
+                        <h2 class="titulo_grid_">Kevin Johansen hará vibrar la capital del país - Admin DC.</h2>
+                    </div>
+                </div>
+                <div class="grid_">
+                    <img src="img/La-Cocina-de-Pepina.jpg" alt="">
+                    <div class="pos_grid_">
+                        <h2 class="titulo_grid_">La Cocina de Pepina abre sus puertas en Bogotá - Admind DC</h2>
+                    </div>
+                </div>
+                <div class="grid_">
+                    <img src="img/Velez.jpeg" alt="">
+                    <div class="pos_grid_">
+                        <h2 class="titulo_grid_">Así define Vélez su más reciente colección - Admin DC</h2>
+                    </div>
+                </div>
+                <div class="grid_">
+                    <img src="img/VI-Bienal.jpeg" alt="">
+                    <div class="pos_grid_">
+                        <h2 class="titulo_grid_">la VI Bienal de Artes Plásticas y Visuales - Admin DC</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------DE LA GENTE EVENTOS------------------- -->
+    <section class="eventos_home">
+        <div class="content_eventos_home">
+            <div class="left_eventos">
+                <div class="head_global">
+                    <div class="content_global global_pd">
+                        <h2 class="titulo_global tit_menor">Eventos de la gente</h2>
+                    </div>
+                </div> 
+                <a href="#"><img src="img/logo_dc.png" alt=""></a>
+                <p class="descrip_eventos">Comparte tus eventos aquí y disfruta de otros eventos subidos por la gente</p>
+                <a href="#" class="boton_creat_ir">SUBIR EVENTO</a>
+            </div>
+            <div class="right_eventos">
+                <div class="slid_videos">
+                    <div class="carousel owl-carousel">
+                        <div class="card_demost">
+                            <div class="img_video">
+                                <img src="img/trio.jpg" alt="">
+                            </div>
+                            <div class="pos_creators">
+                                <p class="etiqueta_pb">7 OCTUBRE, 2022</p>   
+                                <a href="#" class="link_video_cr">Lorem ipsum dolor sit, amet.</a>
+                            </div>
+                        </div>
+                        <div class="card_demost">
+                            <div class="img_video">
+                                <img src="img/tur.jpg" alt="">
+                            </div>
+                            <div class="pos_creators">
+                                <p class="etiqueta_pb">2 NOVIEMBRE, 2022</p>
+                                <a href="#" class="link_video_cr">Lorem ipsum dolor sit, amet.</a>
+                            </div>
+                        </div>
+                        <div class="card_demost">
+                            <div class="img_video">
+                                <img src="img/cantar.jpg" alt="">
+                            </div>
+                            <div class="pos_creators">
+                                <p class="etiqueta_pb">22 FEBRERO, 2022</p>
+                                <a href="#" class="link_video_cr">Lorem ipsum dolor sit, amet.</a>
+                            </div>
+                        </div>
+                        <div class="card_demost">
+                            <div class="img_video">
+                                <img src="img/cine.jpg" alt="">
+                            </div>
+                            <div class="pos_creators">
+                                <p class="etiqueta_pb">7 NOVIEMBRE, 2022</p>
+                                <a href="#" class="link_video_cr">Lorem ipsum dolor sit, amet.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <!-- -----------------------MOD SECCION----------------- -->
+    <div class="seccion">
+        <div class="fond_img_mus">
+            <div class="head_sec musica_sec">
+                <div class="content_head_sec">
+                    <div class="log_sec">
+                        <div class="nombre_sec">
+                            <a href="#" class="link_seccion">MÚSICA</a>
+                        </div>
+                    </div>
+                    <div class="sub_sec">
+                        <a href="#" class="link_sub_sec">Conciertos</a>
+                        <a href="#" class="link_sub_sec">Lanzamientos</a>
+                        <a href="#" class="link_sub_sec">Entrevistas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_seccion">
+            <div class="img_gen">
+                <img src="img/trio.jpg" alt="">
+                <div class="pos_gen">
+                    <a href="#" class="link_sec_gen musica_link">
+                        <span class="et_cat">CONCIERTOS</span>
+                        <span class="descrip_destacada">Conoce las bandas que vibrarán en Rock al Parque</span>
+                    </a>
+                </div>
+            </div>
+            <div class="secciones">
+                <div class="carousel owl-carousel">
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/Kevin-Johansen.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">CONCIERTOS</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">“Tú Ve” de Kevin Johansen hará vibrar la capital del país</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/Christian-Nodal.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">ENTREVISTAS</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">¿Qué pasará con las entradas del «Forajido Tour Medellín» de Christian Nodal?</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/Morat-y-Feid.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">LANZAMIENTOS</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Imperdibles los tres lanzamientos de Universal Music</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/Hombres-G-1.jpeg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">MÚSICA</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Única Presentación de los Hombres-G en el Movistar Arena</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------------------MOD SECCION----------------- -->
+    <div class="seccion">
+        <div class="fond_img_art">
+            <div class="head_sec arte_sec">
+                <div class="content_head_sec">
+                    <div class="log_sec">
+                        <div class="nombre_sec">
+                            <a href="#" class="link_seccion">ARTE Y LETRAS</a>
+                        </div>
+                    </div>
+                    <div class="sub_sec">
+                        <a href="#" class="link_sub_sec">Exposiciones</a>
+                        <a href="#" class="link_sub_sec">Teatro</a>
+                        <a href="#" class="link_sub_sec">Cine</a>
+                        <a href="#" class="link_sub_sec">Dciudad</a>
+                        <a href="#" class="link_sub_sec">Literatura</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_seccion">
+            <div class="img_gen">
+                <img src="img/Bogoshorts.jpg" alt="">
+                <div class="pos_gen">
+                    <a href="#" class="link_sec_gen arte_link">
+                        <span class="et_cat">CINE</span>
+                        <span class="descrip_destacada">Bogoshorts, el cine que inyecta nueva luz</span>
+                    </a>
+                </div>
+            </div>
+            <div class="secciones">
+                <div class="carousel owl-carousel">
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/El-Aguila-Descalza.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">TEATRO</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Estreno y Aguilaldos con El Águila Descalza</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/tunja.jpeg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">DCiudad</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Vuelve el Aguinaldo Boyacense a Tunja</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/VI-Bienal.jpeg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">ARTE</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">¿Ya visitaste la VI Bienal de Artes Plásticas y Visuales FUGA?</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/monster.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">Literatura</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Diez libros de suspenso que debes leer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------MOD INFO_CARTOGRAFIAS--------------------- -->
+    <div class="info_back">
+        <div class="content_info_back">
+            <div class="info_text_back">
+                <h2 class="titulo_back">Cartografías DCiudad</h2>
+                <p class="parrafo_back">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea debitis illo unde cupiditate in tempore dolor iste rerum, quia totam architecto quasi repudiandae consectetur, aliquid blanditiis. Rem fuga rerum debitis.</p>
+                <a href="#" class="btn boton_cart">VER CARTOGRAFÍAS</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- -----------------------MOD SECCION----------------- -->
+    <div class="seccion">
+        <div class="fond_img_gas">
+            <div class="head_sec gastrobar_sec">
+                <div class="content_head_sec">
+                    <div class="log_sec">
+                        <div class="nombre_sec">
+                            <a href="#" class="link_seccion">GASTROBAR</a>
+                        </div>
+                    </div>
+                    <div class="sub_sec">
+                        <a href="#" class="link_sub_sec">Exposiciones</a>
+                        <a href="#" class="link_sub_sec">Teatro</a>
+                        <a href="#" class="link_sub_sec">Cine</a>
+                        <a href="#" class="link_sub_sec">Dciudad</a>
+                        <a href="#" class="link_sub_sec">Literatura</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_seccion">
+            <div class="img_gen">
+                <img src="img/mesa.jpg" alt="">
+                <div class="pos_gen">
+                    <a href="#" class="link_sec_gen gastro_link">
+                        <span class="et_cat">GASTROBAR</span>
+                        <span class="descrip_destacada">Sexy Seoul BBQ: comida asiática con estilo coreano</span>
+                    </a>
+                </div>
+            </div>
+            <div class="secciones">
+                <div class="carousel owl-carousel">
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/gastro.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">RECORRIDOS</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Último día del «All You Can Eat» en tacos</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/Lupulo-y-Cebada-Beer-Garden.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">GASTROBAR</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Lúpulo y Cebada, cerveza e historia en un mismo lugar</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/Abracadabra-Pola-del-Pub.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">GASTROBAR</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Irish Pub y La Pola del Pub lanzan: Abracadabra</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/La-Cocina-de-Pepina.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">RECORRIDOS</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">La Cocina de Pepina abre sus puertas en Bogotá</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------MOD SECCION----------------- -->
+    <div class="seccion">
+        <div class="fond_img_can">
+            <div class="head_sec canabic_sec">
+                <div class="content_head_sec">
+                    <div class="log_sec">
+                        <div class="nombre_sec">
+                            <a href="#" class="link_seccion">CULTURA CANNÁBICA</a>
+                        </div>
+                    </div>
+                    <div class="sub_sec">
+                        <a href="#" class="link_sub_sec">Industria</a>
+                        <a href="#" class="link_sub_sec">Agenda</a>
+                        <a href="#" class="link_sub_sec">Noticias</a>
+                        <a href="#" class="link_sub_sec">Recomendados</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_seccion">
+            <div class="img_gen">
+                <img src="img/paisaje.jpg" alt="">
+                <div class="pos_gen">
+                    <a href="#" class="link_sec_gen canabis_link">
+                        <span class="et_cat">INDUSTRIA</span>
+                        <span class="descrip_destacada">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, necessitatibus!</span>
+                    </a>
+                </div>
+            </div>
+            <div class="secciones">
+                <div class="carousel owl-carousel"> 
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/paisaje.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">INDUSTRIA</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Último día del «All You Can Eat» en tacos</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/paisaje.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">AGENDA</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Lúpulo y Cebada, cerveza e historia en un mismo lugar</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/paisaje.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">NOTICIAS</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Irish Pub y La Pola del Pub lanzan: Abracadabra</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/paisaje.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">RECOMENDADOS</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">La Cocina de Pepina abre sus puertas en Bogotá</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- -------------------MOD CARDS CAROUSEL--------------------- -->
+    <div class="cards">
+        <div class="head_global">
+            <div class="content_global">
+                <h2 class="titulo_global">Nuestros tienda Online</h2>
+            </div>
+        </div>
+        <div class="content_cards">
+            <div class="contenido_slider">
+                <div class="carousel_cards owl-carousel">
+                    <div class="card_">
+                        <div class="head_card">
+                            <img src="img/gorra.webp" alt="" class="img_card">
+                            <a href="#" class="link_producto">VER PRODUCTO</a>
+                        </div>
+                        <div class="bot_card">
+                            <a href="#" class="nombre_prod">Gorras</a>
+                        </div>
+                    </div>
+                    <div class="card_"> 
+                        <div class="head_card">
+                            <img src="img/pantalon.jpg" alt="" class="img_card">
+                            <a href="#" class="link_producto">VER PRODUCTO</a>
+                        </div>
+                        <div class="bot_card">
+                            <a href="#" class="nombre_prod">Pantalones</a>
+                        </div>
+                    </div>
+                    <div class="card_">
+                        <div class="head_card">
+                            <img src="img/tienda.png" alt="" class="img_card">
+                        </div>
+                        <div class="bot_card">
+                            <a href="#" class="nombre_prod">Tienda</a>
+                        </div>
+                    </div>
+                    <div class="card_">
+                        <div class="head_card">
+                            <img src="img/camiseta.jpg" alt="" class="img_card">
+                            <a href="#" class="link_producto">VER PRODUCTO</a>
+                        </div>
+                        <div class="bot_card">
+                            <a href="#" class="nombre_prod">Camisetas</a>
+                        </div>
+                    </div>
+                    <div class="card_">
+                        <div class="head_card">
+                            <img src="img/gorra.webp" alt="" class="img_card">
+                            <a href="#" class="link_producto">VER PRODUCTO</a>
+                        </div>
+                        <div class="bot_card">
+                            <a href="#" class="nombre_prod">Gorras</a>
+                        </div>
+                    </div>
+                    <div class="card_">
+                        <div class="head_card">
+                            <img src="img/pantalon.jpg" alt="" class="img_card">
+                            <a href="#" class="link_producto">VER PRODUCTO</a>
+                        </div>
+                        <div class="bot_card">
+                            <a href="#" class="nombre_prod">Pantalones</a>
+                        </div>
+                    </div>
+                    <div class="card_">
+                        <div class="head_card">
+                            <img src="img/tienda.png" alt="" class="img_card">
+                        </div>
+                        <div class="bot_card">
+                            <a href="#" class="nombre_prod">Tienda</a>
+                        </div>
+                    </div>
+                    <div class="card_">
+                        <div class="head_card">
+                            <img src="img/camiseta.jpg" alt="" class="img_card">
+                            <a href="#" class="link_producto">VER PRODUCTO</a>
+                        </div>
+                        <div class="bot_card">
+                            <a href="#" class="nombre_prod">Camisetas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------------SECTION CANAL VIDEOS--------------- -->
+    <div class="emb_vid">
+        <div class="head_global">
+            <div class="content_global text_centrado">
+                <h2 class="titulo_global color_positivo">Visita nuestro canal de Youtube y disfruta de todos los espácios en Bogotá que hay para tí!</h2>
+            </div>
+        </div>
+        <div class="content_emb_vid">
+            <div class="info_vid">
+                <div class="carousel_vid owl-carousel">
+                    <div class="card_vid">
+                        <iframe src="https://www.youtube.com/embed/Pra3SPrfDWk" class="video_you" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card_vid">
+                        <iframe src="https://www.youtube.com/embed/t49QUoP2fI8" class="video_you" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="card_vid">
+                        <iframe src="https://www.youtube.com/embed/8hfOnKyGnrQ" class="video_you" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>     
+            </div>
+        </div>
+        <div class="descrip_vid">
+            <a href="#" class="btn canal_dc bot_negro">VER VIDEOS</a>
+            <a href="#" class="btn canal_dc">CANAL DE YOUTUBE</a>
+        </div>
+    </div>  
+
+
+    <!-- -----------------------MOD SECCION----------------- -->
+    <div class="seccion">
+        <div class="fond_img_tur">
+            <div class="head_sec turismo_sec">
+                <div class="content_head_sec">
+                    <div class="log_sec">
+                        <div class="nombre_sec">
+                            <a href="#" class="link_seccion">TURISMO</a>
+                        </div>
+                    </div>
+                    <div class="sub_sec">
+                        <a href="#" class="link_sub_sec">Destinos</a>
+                        <a href="#" class="link_sub_sec">Ecoturismo</a>
+                        <a href="#" class="link_sub_sec">Hoteles</a>
+                        <a href="#" class="link_sub_sec">Noticias</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_seccion">
+            <div class="img_gen">
+                <img src="img/scale.jpg" alt="">
+                <div class="pos_gen">
+                    <a href="#" class="link_sec_gen turismo_link">
+                        <span class="et_cat">TURISMO</span>
+                        <span class="descrip_destacada">MinComercio y Fontur premiaron las mejores fotos del concurso Revela Colombia</span>
+                    </a>
+                </div>
+            </div>
+            <div class="secciones">
+                <div class="carousel owl-carousel">
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/eco.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">ECOTURISMO</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">¡Gratis! Recorridos interpretativos en humedales y parques ecológicos de Bogotá</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/Peru.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">TURISMO</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Perú, un lugar para crear recuerdos eternos</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/Movich-Cartagena-de-indias.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">HOTELES</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Descanso seguro e inolvidable con Movich Explore & Travel</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/Viva-Aerobus.jpeg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">NOTICIAS</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Una nueva aerolínea llega a la capital de la montaña</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- -----------------------MOD SECCION----------------- -->
+     <div class="seccion">
+        <div class="fond_img_ten">
+            <div class="head_sec tendencias_sec">
+                <div class="content_head_sec">
+                    <div class="log_sec">
+                        <div class="nombre_sec">
+                            <a href="#" class="link_seccion">TENDENCIAS</a>
+                        </div>
+                    </div>
+                    <div class="sub_sec">
+                        <a href="#" class="link_sub_sec">Tecnología</a>
+                        <a href="#" class="link_sub_sec">Moda</a>
+                        <a href="#" class="link_sub_sec">Bienestar</a>
+                        <a href="#" class="link_sub_sec">Cultura Bici</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_seccion">
+            <div class="img_gen">
+                <img src="img/Prime-Blend-Store.jpeg" alt="">
+                <div class="pos_gen">
+                    <a href="#" class="link_sec_gen tendencia_link">
+                        <span class="et_cat">TENDENCIAS</span>
+                        <span class="descrip_destacada">Mabe celebra el primer aniversario de Prime Blend Store</span>
+                    </a>
+                </div>
+            </div>
+            <div class="secciones">
+                <div class="carousel owl-carousel">
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/poker.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">TENDENCIAS</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">
+                                ¿Qué necesitas saber sobre los bonos de casino en línea?</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/startups.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">TECNOLOGÍA</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">¿Cuáles son las mejores startups de Colombia en el 2022?</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/Velez.jpeg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">MODA</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Todo desde el alma, así define Vélez su más reciente colección</a>
+                        </div>
+                    </div>
+                    <div class="caja_sec">
+                        <div class="img_sob">
+                            <img src="img/Dr.-Carlos-Jaramillo.jpg" alt="">
+                            <a href="#" class="absolute_sec">
+                                <p class="etiqueta_sec">BIENESTAR</p>
+                            </a>
+                        </div>
+                        <div class="pie_caja">
+                            <a href="#" class="link_sec">Vuelve Loop Summit, el evento de salud más grande en Colombia</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- -----------------------FOOTER-------------------------------------- -->
+    <footer class="back_footer">
+        <div class="footer">
+            <div class="content_footer">
+                <div class="col_footer">
+                    <div class="head_col">
+                        <h2 class="titulo_col">Categorías</h2>
+                    </div>
+                    <div class="body_col">
+                        <a href="#" class="link_footer">Música</a>
+                        <a href="#" class="link_footer">Arte y Letras</a>
+                        <a href="#" class="link_footer">Gastrobar</a>
+                        <a href="#" class="link_footer">Cultura Cannábica</a>
+                        <a href="#" class="link_footer">Turismo</a>
+                        <a href="#" class="link_footer">Tendencias</a>
+                    </div>
+                </div>
+                <div class="col_footer">
+                    <div class="head_col">
+                        <h2 class="titulo_col">Temas</h2>
+                    </div>
+                    <div class="body_col">
+                        <a href="#" class="link_footer">Conciertos</a>
+                        <a href="#" class="link_footer">Festivales</a>
+                        <a href="#" class="link_footer">Cultura</a>
+                        <a href="#" class="link_footer">Gastronomía</a>
+                        <a href="#" class="link_footer">Arte</a>
+                    </div>
+                </div>
+                <div class="col_footer">
+                    <div class="head_col">
+                        <h2 class="titulo_col">Tendencias</h2>
+                    </div>
+                    <div class="body_col">
+                        <a href="#" class="link_footer">Tecnología</a>
+                        <a href="#" class="link_footer">Moda</a>
+                        <a href="#" class="link_footer">Bienestar</a>
+                        <a href="#" class="link_footer">Cultura Bici</a>
+                        <a href="#" class="link_footer">Próximos Eventos</a>
+                    </div>
+                </div>
+                <div class="col_footer">
+                    <div class="head_col">
+                        <h2 class="titulo_col">Sobre</h2>
+                    </div>
+                    <div class="body_col">
+                        <a href="#" class="link_footer">Quiénes somos</a>
+                    </div>
+                </div>
+                <div class="col_footer">
+                    <form action="">
+                        <div class="campo_suscribe">
+                            <input type="text" placeholder="Suscríbete">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <button class="btn btn_suscribe">Suscríbete</button>
+                    </form>
+                    <div class="redes_footer">
+                        <a href="#" class="red_ft"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="red_ft"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="red_ft"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="red_ft"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="red_ft"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="red_ft"><i class="fa-solid fa-video"></i></a>
+                    </div>
+                    <div class="body_col">
+                        <a href="#" class="pauta">Paute con nosotros</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="content_copy">
+                    <div class="logo_copy">
+                        <img src="img/logo_sub_white.png" alt="">
+                    </div>
+                    <div class="contacto_copy">
+                        <a href="#" class="link_copy">Contacto</a>
+                        <p class="separador">|</p>
+                        <a href="#" class="link_copy">Aviso de privacidad</a>
+                        <p class="separador">|</p>
+                        <a href="#" class="link_copy">Política de datos</a>
+                    </div>
+                    <div class="right_copy">
+                        <p class="text_copy">© 2022 Copyright | revistadc.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- JavaScript Bundle with Popper Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    <!-- -----------------cdn slider carousel--------------- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>   
+    
+
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/codigo.js"></script> 
+</body>
+</html>

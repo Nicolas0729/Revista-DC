@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------LINKS OWL CAROUSEL----------------- -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- ----------BOOTSTRAP 5.0.2----------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Interna Video</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilos.css?v=1.3">
+    <link rel="stylesheet" href="css/responsive.css?v=1.3">
+</head>
+<body>
+   <!-- ----------------------------------OFFCANVAS------------------------------------- -->
+   <div class="offcanvas offcanvas-start canvas_menu" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header head_canva">
+      <img src="img/logo_white.png" alt="">
+      <div class="iconos_header">
+        <div class="redes_head">
+            <a href="#" class="red"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="red"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="red"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="red"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="red"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="red"><i class="fa-solid fa-video"></i></a>
+        </div>
+        <div class="carrito">
+            <button type="button" class="btn boton_carrito position-relative">
+                <i class="fa-solid fa-cart-shopping"></i>   
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  0+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+        </div>
+    </div>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed btn_buscador" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    BUSCADOR
+                    </button>
+                </h2> 
+                <div id="flush-collapseOne" class="accordion-collapse collapse " aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="contenedor_select">
+                            <select class="form-select select_campo" aria-label="Default select example">
+                                <option selected>Categoría</option>
+                                <option value="1" class="opcion">Cat #1</option>
+                                <option value="2" class="opcion">Cat #2</option>
+                                <option value="3" class="opcion">Cat #3</option>
+                                <option value="4" class="opcion">Cat #4</option>
+                                <option value="3" class="opcion">Cat #3</option>
+                                <option value="4" class="opcion">Cat #4</option>
+                            </select>
+                        </div>
+                        <div class="contenedor_select">
+                            <select class="form-select select_campo" aria-label="Default select example">
+                                <option selected>Ciudad</option>
+                                <option value="1" class="opcion">Medellín</option>
+                                <option value="2" class="opcion">Bogotá</option>
+                                <option value="3" class="opcion">Barranquilla</option>
+                            </select>
+                        </div>
+                        <div class="contenedor_select">
+                            <select class="form-select select_campo" aria-label="Default select example">
+                                <option selected>Fecha</option>
+                                <option value="1" class="opcion">Fecha #1</option>
+                                <option value="2" class="opcion">Fecha #2</option>
+                                <option value="3" class="opcion">Fecha #3</option>
+                                <option value="4" class="opcion">Fecha #4</option>
+                            </select>
+                        </div>
+                        <div class="contenedor_select d-grid">
+                            <button type="button" class="btn btn_buscar">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="menu_categorias">
+        <div class="nav_">
+            <a href="#" class="seccion_gen">QUIÉNES SOMOS</a>
+        </div>
+        <div class="nav_">
+            <a href="#" class="seccion_gen">MÚSICA</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Conciertos</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Lanzamientos</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Entrevistas</a>
+        </div>
+        <div class="nav_">
+            <a href="#" class="seccion_gen">ARTE Y LETRAS</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Exposiciones</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Teatro</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Cine</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>DCiudad</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Literatura</a>
+        </div>
+        <div class="nav_">
+            <a href="#" class="seccion_gen">GASTROBAR</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Noticias</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Recomendados</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Recorridos</a>
+        </div>
+        <div class="nav_">
+            <a href="#" class="seccion_gen">CULTURA CANNÁBICA</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Industria</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Agenda</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Noticias</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Recomendados</a>
+        </div>
+        <div class="nav_">
+            <a href="#" class="seccion_gen">TURISMO</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Destinos</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Ecoturismo</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Hoteles</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Noticias</a>
+        </div>
+        <div class="nav_">
+            <a href="#" class="seccion_gen">TENDENCIAS</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Tecnología</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Moda</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Bienestar</a>
+            <a href="#" class="sub_seccion_gen"><i class="fa-solid fa-chevron-right"></i>Cultura Bici</a>
+        </div>
+        <div class="nav_">
+            <a href="#" class="seccion_gen">PAUTE CON NOSOTROS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- ---------------------------HEADER------------------------------ -->
+<header class="header">
+    <div class="content_header">
+        <div class="menu_mobile">
+            <div class="menu_">
+                <button type="submit" class="btn_nav" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+        <div class="logo_header">
+            <img src="img/logo_dc.png" alt="">
+        </div>
+        <div class="iconos_header">
+            <div class="right_suscribe">
+                <a href="#" class="btn boton_suscribe">SUSCRÍBETE</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="sub_menu">
+    <div class="content_sub">
+        <div class="menu_logo_mob">
+            <button type="submit" class="btn_nav btn_nav_red" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa-solid fa-bars"></i></button>
+            <img src="img/logo_sub_red.png" alt=""> 
+        </div>
+        <div class="scrollmenu">
+            <div class="sub_menu_cat">
+                <a href="#" class="item_cat">Conciertos</a>
+            </div>
+            <div class="sub_menu_cat">
+                <a href="#" class="item_cat">Cultura</a>
+            </div>
+            <div class="sub_menu_cat">
+                <a href="#" class="item_cat">Gastronomía</a>
+            </div>
+            <div class="sub_menu_cat">
+                <a href="#" class="item_cat">Planes</a>
+            </div>
+            <div class="sub_menu_cat">
+                <a href="#" class="item_cat">Festivales</a>
+            </div>
+            <div class="sub_menu_cat">
+                <a href="#" class="item_cat">Exposiciones</a>
+            </div>
+            <div class="sub_menu_cat">
+                <a href="#" class="item_cat">Arte</a>
+            </div>
+            <div class="sub_menu_cat">
+                <a href="#" class="item_cat">Rumba</a>
+            </div>
+            <div class="sub_menu_cat">
+                <a href="#" class="item_cat">Videos</a> 
+            </div>
+            <div class="sub_menu_cat">
+                <a href="#" class="sub_bus" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+        <div class="contenedor_item_sub">
+            <a href="#" class="item_submenu">Conciertos</a>
+            <a href="#" class="item_submenu">Cultura</a>
+            <a href="#" class="item_submenu">Gastronomía</a>
+            <a href="#" class="item_submenu">Planes</a>
+            <a href="#" class="item_submenu">Festivales</a>
+            <a href="#" class="item_submenu">Exposiciones</a>
+            <a href="#" class="item_submenu">Arte</a>
+            <a href="#" class="item_submenu">Rumba</a>
+            <a href="#" class="item_submenu">Videos</a>
+            <a href="#" class="sub_bus" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="row">
+            <div class="col"> 
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body caja_collapse">
+                    <div class="content_collapse">
+                        <input type="text" placeholder="Buscar...">
+                        <button type="submit" class="btn btn_submit">Buscar</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- ---------------MOD SECCION CATEGORIAS------------------------------ -->
+    <div class="categorias_sec">
+        <div class="content_categorias sin_padd_bot">
+            <div class="nota_mayor float_right ultima_nota con_pad_int">
+                <div class="contenido_video_dc">
+                    <div class="embebido">
+                        <iframe class="video_youtube" src="https://www.youtube.com/embed/Pra3SPrfDWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2 class="titulo_video">Plan Recomendado DC: Lúpulo y Cebada</h2>
+                    </div>
+                    <div class="pie_video">
+                        <p class="pub_vid"><i class="fa-solid fa-user"></i>Revista DC</p>
+                        <p class="pub_vid"><i class="fa-solid fa-calendar-days"></i>Publicado 19 Otubre, 2022</p>
+                        <p class="pub_vid"><i class="fa-solid fa-tag"></i>Gastrobar</p>
+                    </div>
+                </div>
+                <div class="texto_evento">
+                    <h4 class="sub_titulo_evento">Acompañanos</h4>
+                    <p class="parrafo_evento">En el Parkway de la ciudad de Bogotá, encontramos un innovador espacio, donde la cerveza es su protagonista. En nuestro Plan Recomendado DC, te invitamos a conocer: Lúpulo y Cebada, Beer Garden.</p>
+                    <p class="parrafo_evento">Hablamos con Edgar Salcedo, quien nos relató su pasión y sabiduría de este histórico producto.</p>
+                </div>
+                <div class="bloque_info">
+                    <div class="head_global">
+                        <div class="content_global">
+                            <h2 class="titulo_global">Recomendados</h2>
+                        </div>
+                    </div>
+                    <div class="nota_aling">
+                        <div class="col_aling">
+                            <p class="etiqueta_aling">PLAN DC</p>
+                            <a href="#" class="link_nota_al">Plan Recomendado DC: Fratto Heladería</a>
+                            <p class="fecha_aling"><i class="fa-solid fa-calendar-days"></i>2 NOVIEMBRE, 2022</p>
+                        </div>
+                        <div class="col_aling">
+                            <p class="parrafo_aling">Desde Francia, llegó desde el año 2019 al barrio San Felipe Fratto Heladería para consentir a toda su clientela con deliciosas creaciones, mezclas y sabores con un toque francés y la maravillosa diversidad de frutas de Colombia.</p>
+                        </div>
+                        <div class="col_aling">
+                            <iframe class="video_youtube" src="https://www.youtube.com/embed/lucDud9m118" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="nota_aling">
+                        <div class="col_aling">
+                            <p class="etiqueta_aling">PLAN DC</p>
+                            <a href="#" class="link_nota_al">Plan Recomendado DC: Barrio San Felipe</a>
+                            <p class="fecha_aling"><i class="fa-solid fa-calendar-days"></i>14 OCTUBRE, 2022</p>
+                        </div>
+                        <div class="col_aling">
+                            <p class="parrafo_aling">El Barrio San Felipe sin duda, se caracteriza por ser un espacio que invita al arte, a la gastronomía típica e internacional, a emprendimientos y grandes iniciativas.</p>
+                        </div>
+                        <div class="col_aling">
+                            <iframe class="video_youtube" src="https://www.youtube.com/embed/8hfOnKyGnrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="nota_aling">
+                        <div class="col_aling">
+                            <p class="etiqueta_aling">PLAN DC</p>
+                            <a href="#" class="link_nota_al">Plan Recomendado DC: Tejo la embajada</a>
+                            <p class="fecha_aling"><i class="fa-solid fa-calendar-days"></i>6 OCTUBRE, 2022</p>
+                        </div>
+                        <div class="col_aling">
+                            <p class="parrafo_aling">Se trata de Tejo La Embajada, el primer tejo con cerveza artesanal de la ciudad, ambiente típico colombiano de celebración, gastronomía tradicional, vegana y vegetariana, todo esto acompañado de las mejores noches de "Festejo"</p>
+                        </div>
+                        <div class="col_aling">
+                            <iframe class="video_youtube" src="https://www.youtube.com/embed/KiIwEoL_mio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar_notas sin_margen">
+                <div class="buscador_sidebar">
+                    <div class="head_buscador_sid">
+                        <h2 class="titulo_buscar_sid">BUSCAR</h2>
+                    </div>
+                    <div class="selectores_sid">
+                        <div class="select_sid">
+                            <select class="form-select" aria-label="Default select example">
+                            <option selected>Categoría</option>
+                            <option value="1" class="opcion">Gat #1</option>
+                            <option value="2" class="opcion">Cat #2</option>
+                            <option value="3" class="opcion">Cat #3</option>
+                            <option value="4" class="opcion">Cat #4</option>
+                            </select>
+                        </div>
+                        <div class="select_sid">
+                            <select class="form-select" aria-label="Default select example">
+                            <option selected>Ciudad</option>
+                            <option value="1" class="opcion">Medellín</option>
+                            <option value="2" class="opcion">Bogotá</option>
+                            <option value="3" class="opcion">Barranquilla</option>
+                            </select>
+                        </div>
+                        <div class="select_sid">
+                            <select class="form-select" aria-label="Default select example">
+                            <option selected>Fecha</option>
+                            <option value="1" class="opcion">Fecha #1</option>
+                            <option value="2" class="opcion">Fecha #2</option>
+                            <option value="3" class="opcion">Fecha #3</option>
+                            <option value="4" class="opcion">Fecha #4</option>
+                            </select>
+                        </div>
+                        <div class="select_sid d-grid ">
+                            <button type="button" class="btn btn_search">Buscar</button>
+                        </div>
+                    </div>
+                    <div class="ads_">
+                        <h2 class="titulo_ads">ADS 300</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- -----------------------FOOTER-------------------------------------- -->
+   <footer class="back_footer">
+    <div class="footer">
+        <div class="content_footer">
+            <div class="col_footer">
+                <div class="head_col">
+                    <h2 class="titulo_col">Categorías</h2>
+                </div>
+                <div class="body_col">
+                    <a href="#" class="link_footer">Música</a>
+                    <a href="#" class="link_footer">Arte y Letras</a>
+                    <a href="#" class="link_footer">Gastrobar</a>
+                    <a href="#" class="link_footer">Cultura Cannábica</a>
+                    <a href="#" class="link_footer">Turismo</a>
+                    <a href="#" class="link_footer">Tendencias</a>
+                </div>
+            </div>
+            <div class="col_footer">
+                <div class="head_col">
+                    <h2 class="titulo_col">Temas</h2>
+                </div>
+                <div class="body_col">
+                    <a href="#" class="link_footer">Conciertos</a>
+                    <a href="#" class="link_footer">Festivales</a>
+                    <a href="#" class="link_footer">Cultura</a>
+                    <a href="#" class="link_footer">Gastronomía</a>
+                    <a href="#" class="link_footer">Arte</a>
+                </div>
+            </div>
+            <div class="col_footer">
+                <div class="head_col">
+                    <h2 class="titulo_col">Tendencias</h2>
+                </div>
+                <div class="body_col">
+                    <a href="#" class="link_footer">Tecnología</a>
+                    <a href="#" class="link_footer">Moda</a>
+                    <a href="#" class="link_footer">Bienestar</a>
+                    <a href="#" class="link_footer">Cultura Bici</a>
+                    <a href="#" class="link_footer">Próximos Eventos</a>
+                </div>
+            </div>
+            <div class="col_footer">
+                <div class="head_col">
+                    <h2 class="titulo_col">Sobre</h2>
+                </div>
+                <div class="body_col">
+                    <a href="#" class="link_footer">Quiénes somos</a>
+                </div>
+            </div>
+            <div class="col_footer">
+                <form action="">
+                    <div class="campo_suscribe">
+                        <input type="text" placeholder="Suscríbete">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <button class="btn btn_suscribe">Suscríbete</button>
+                </form>
+                <div class="redes_footer">
+                    <a href="#" class="red_ft"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="red_ft"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="red_ft"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="red_ft"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="red_ft"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="red_ft"><i class="fa-solid fa-video"></i></a>
+                </div>
+                <div class="body_col">
+                    <a href="#" class="pauta">Paute con nosotros</a>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="content_copy">
+                <div class="logo_copy">
+                    <img src="img/logo_sub_white.png" alt="">
+                </div>
+                <div class="contacto_copy">
+                    <a href="#" class="link_copy">Contacto</a>
+                    <p class="separador">|</p>
+                    <a href="#" class="link_copy">Aviso de privacidad</a>
+                    <p class="separador">|</p>
+                    <a href="#" class="link_copy">Política de datos</a>
+                </div>
+                <div class="right_copy">
+                    <p class="text_copy">© 2022 Copyright | revistadc.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+
+    <!-- JavaScript Bundle with Popper Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    <!-- -----------------cdn slider carousel--------------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+
+   <script src="js/codigo.js"></script> 
+</body>
+</html>
